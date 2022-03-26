@@ -4,7 +4,7 @@ In `src/assembly/index.ts`
 
 ```ts
 export function helloWorld(names: Array<string>): string {
-  return names.map<string>((name) => `hello ${name}`).join(`\n`);
+  return names.map<string>((name) => `hello ${name}`).join(', ');
 }
 ```
 

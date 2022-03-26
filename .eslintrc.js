@@ -29,6 +29,7 @@ module.exports = {
     'max-lines': ['error', { max: 300, skipBlankLines: true, skipComments: true }], // https://eslint.org/docs/rules/max-lines
     'no-console': 'off', // Console logging is super helpful for development, and we can have our build process strip out all of those statements for production.
     'no-else-return': 'off',
+    'prefer-destructuring': 'off', // Disabling this seems to be required for AssemblyScript.
     'react/react-in-jsx-scope': 'off',
     'react/function-component-definition': 'off',
   },

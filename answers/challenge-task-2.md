@@ -12,7 +12,7 @@ Change to:
 
 ```ts
 export function helloWorld(names: Array<string>): string {
-  return names.map<string>((name) => `hello ${name}`).join(`\n`);
+  return names.map<string>((name) => `hello ${name}`).join(', ');
 }
 ```
 
@@ -21,8 +21,7 @@ Build, deploy, and run the contract.
 Expected output:
 
 ```
-hello Your Name
-hello Friend Name
+hello Your Name, hello Friend Name
 ```
 
 **Bonus**

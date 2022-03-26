@@ -25,7 +25,7 @@ INSTALL `NEAR CLI` first like this: `npm i -g near-cli`
 
 You should try completing the following 3 tasks one at a time. The answer is available for each, but don't look at them until you've tried your best. All 3 probably will only take you 15 minutes.
 
-## Basic overview of the 3 tasks (which will be detailed in the following sections)
+## Basic overview of the 3 tasks (which will be detailed in the following sections, so keep reading)
 
 1. Change `helloWorld` method so it accepts parameter `name` and greets that person instead.
 1. Change `helloWorld` method so it accepts parameter array `names` and greets each of those people.
@@ -66,8 +66,7 @@ near view $CONTRACT helloWorld "['Your Name', 'Friend Name']"
 - output:
 
 ```
-hello Your Name
-hello Friend Name
+hello Your Name, hello Friend Name
 ```
 
 **Bonus**
