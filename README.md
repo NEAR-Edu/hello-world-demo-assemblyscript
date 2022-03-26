@@ -21,7 +21,68 @@ INSTALL `NEAR CLI` first like this: `npm i -g near-cli`
 5. run `./scripts/2.use-contract.sh` (yes, run it to see changes)
 6. run `./scripts/3.cleanup.sh`
 
-### Other documentation
+# The Challenge
+
+You should try completing the following 3 tasks one at a time. The answer is available for each, but don't look at them until you've tried your best. All 3 probably will only take you 15 minutes.
+
+## Basic overview of the 3 tasks (which will be detailed in the following sections)
+
+1. Change `helloWorld` method so it accepts parameter `name` and greets that person instead.
+1. Change `helloWorld` method so it accepts parameter array `names` and greets each of those people.
+1. Change `helloWorld` method so it reads the Account ID from Context and greets the account who called the function.
+
+## Task 1 success criteria
+
+- input:
+
+```bash
+near view $CONTRACT helloWorld '{"name": "Your Name"}'
+```
+
+- incorrect input (don't do it like this, which throws an error):
+
+```bash
+near view $CONTRACT helloWorld 'Your Name'
+```
+
+- output: `hello Your Name`
+
+Ready to see Task 1 answer? [Check here](answers/challenge-task-1.md)
+
+## Task 2 success criteria
+
+- input:
+
+```bash
+near view $CONTRACT helloWorld '{"names": ["Your Name", "Friend Name"]}'
+```
+
+- incorrect input (don't do it like this, which throws an error):
+
+```bash
+near view $CONTRACT helloWorld "['Your Name', 'Friend Name']"
+```
+
+- output:
+
+```
+hello Your Name
+hello Friend Name
+```
+
+**Bonus**
+Try instead providing thousands of names in the array. Check the error, and learn why it has failed.
+
+Ready to see Task 2 answer? [Check here](answers/challenge-task-2.md)
+
+## Task 3 success criteria
+
+- input: `near call $CONTRACT helloWorld --accountId <id>.testnet`
+- output: `hello <id>.testnet`
+
+Ready to see Task 3 answer? [Check here](answers/challenge-task-3.md)
+
+# Other documentation
 
 - See `./scripts/README.md` for documentation about the scripts
 - See the original repo at https://github.com/Learn-NEAR/starter--near-sdk-as
@@ -52,9 +113,9 @@ INSTALL `NEAR CLI` first like this: `npm i -g near-cli`
 └── yarn.lock                      # project manifest version lock
 ```
 
-You may clone this repo to get started OR create everything from scratch.
+## Other thoughts
 
-Please note that in order to create the AssemblyScript and tests folder structure, you may use the command `npx asp --init` which will create the following folders and files (see https://tenner-joshua.gitbook.io/as-pect/getting-started):
+You may want to consider using the command `npx asp --init`, which will create the following folders and files (see https://tenner-joshua.gitbook.io/as-pect/getting-started):
 
 ```
 ./assembly/
