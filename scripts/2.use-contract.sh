@@ -41,5 +41,5 @@ echo
 near call $CONTRACT write '{"key": "some-key", "value":"some value"}' --accountId $CONTRACT
 
 echo
-echo "now run this script again to see changes made by this file"
+echo "Now run this script again to see changes made by this file."
 exit 0
