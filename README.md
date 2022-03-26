@@ -54,7 +54,7 @@ INSTALL `NEAR CLI` first like this: `npm i -g near-cli`
 
 You may clone this repo to get started OR create everything from scratch.
 
-Please note that in order to create the AssemblyScript and tests folder structure, you may use the command `npx asp --init` which will create the following folders and files:
+Please note that in order to create the AssemblyScript and tests folder structure, you may use the command `npx asp --init` which will create the following folders and files (see https://tenner-joshua.gitbook.io/as-pect/getting-started):
 
 ```
 ./assembly/
