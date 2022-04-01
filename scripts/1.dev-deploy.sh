@@ -34,6 +34,7 @@ echo
 echo ---------------------------------------------------------
 echo 'export CONTRACT=dev-1648309481351-57754638618310'
 echo ---------------------------------------------------------
-echo
+echo "↑ This 'export' command was just an example. Remember to replace the dev account ID with the one that you found higher up in the message."
+echo ---------------------------------------------------------
 
 exit 0
